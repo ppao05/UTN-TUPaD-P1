@@ -84,5 +84,61 @@ else:
 
 ##Actividad 8
 
+nombre = input("Ingrese su nombre:")
 
+def menu ():
+    print('1-nombre en minúscula')
+    print('2-nombre en mayúscula')
+    print('3-nombre con primera letra mayúscula')
+    opc = int(input("Ingrese una opción:"))
+    return opc
+
+opción = menu()
+if opción == 1:
+    print(nombre.lower())
+elif opción == 2:
+    print(nombre.upper())
+elif opción == 3:
+    print(nombre.capitalize())
+
+##Actividad 9
+
+magnitud = float(input("Introduce la magnitud del terremoto:"))
+
+if magnitud < 3:
+    print("Muy leve. (Imperceptible)")
+elif magnitud >= 3 and magnitud < 4:
+    print("Moderado. (Sentido por personas, pero genralmente no causa daños)")
+elif magnitud >=5 and magnitud < 6:
+    print("Fuerte. (Puede causar daños en estructuras débiles)")
+elif magnitud >= 6 and magnitud < 7:
+    print("Muy fuerte. (Puede causar daños significativos)")
+elif magnitud >= 7:
+    print("Extremo. (Puede causar graves daños a gran escala)")
+
+##Actividad 10
+
+hemisferio = input("Ingrese 'N' si se encuentra en el hemisferio Norte o ingrese 'S' si se encuentra en el hemisferio Sur:")
+mes = int(input("Ingrese el número de mes:"))
+día = int(input("Ingrese el número del día:"))
+
+if hemisferio == 'N':
+    if (mes == 12 and día >=21) or (mes <= 3 and día <=20):
+        print("Usted se encuentra en invierno")
+    elif (mes == 3 and día >= 21) or (mes <=6 and día <=20):
+        print("Usted se encuentra en primavera")
+    elif (mes == 6 and día >= 21) or (mes <= 9 and día <=20):
+        print("Usted se encuentra en verano")
+else:
+    print("Usted se encuentra en otoño")
+
+if hemisferio == 'S':
+    if (mes == 12 and día >=21) or (mes <= 3 and día <= 20):
+        print("Usted se encuentra en verano")
+    elif (mes == 3 and día >= 21) or (mes <= 6 and día <=20):
+        print("Usted se encuentra en otoño")
+    elif (mes == 6 and día >= 21) or (mes <= 9 and día <=20):
+        print("Usted se encuentra en invierno")
+else:
+    print("USted se encuentra en primavera")
 
