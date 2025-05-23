@@ -9,6 +9,7 @@
 ## 📂 Descripción del Repositorio  
 Este repositorio almacena todas los trabajos prácticos realizados durante la cursada de **Programación 1**.  
 Códigos realizados para la unidad 5.1, Listas
+Códigos realizados para la unidad 5. Funciones
 
 📌 **Estructura del repositorio:**  
 - Cada trabajo está organizado en carpetas individuales.  
